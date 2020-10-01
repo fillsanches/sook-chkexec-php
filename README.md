@@ -35,7 +35,7 @@ Não há necessidade de nenhuma instalação extra, configuração ou resoluçã
  ### TESTES INICIAIS
 
 
-Existem no repósitorio 4 arquivos que compooe um exemplo, nomeados como file{x}.php. Execute o file1.php para fazer um teste utilizando todos os métodos disponíveis, e se certificar de que tudo está funcionando como esperado. A maneira mais simples de fazer isso é executar o servidor web embutido, para isso no diretório onde baixou o repositório:
+Existem no repósitorio 4 arquivos que compooe um exemplo, nomeados como sample{x}.php. Execute o file1.php para fazer um teste utilizando todos os métodos disponíveis, e se certificar de que tudo está funcionando como esperado. A maneira mais simples de fazer isso é executar o servidor web embutido, para isso no diretório onde baixou o repositório:
 ```
 php -S 127.0.0.1:8000
 ```

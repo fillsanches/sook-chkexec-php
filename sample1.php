@@ -1,5 +1,5 @@
 <?php
-
+//exemple file
 require_once 'Autoload.php';
 
 $execution = new Chkexec('execution001');
@@ -9,10 +9,10 @@ Place here all the files that will compose the execution one
 */
 
 $files = array(
-    __DIR__.'/file1.php',
-    __DIR__.'/file2.php',
-    __DIR__.'/file3.php',
-    __DIR__.'/subdirectory/file4.php'
+    __DIR__.'/sample1.php',
+    __DIR__.'/sample2.php',
+    __DIR__.'/sample3.php',
+    __DIR__.'/subdirectory/sample4.php'
 );
 
 $execution->addFileToCheck($files);
@@ -25,7 +25,7 @@ Also check that there are no files required or included in the execution flow
 that are not in the mapped_files array.
 You can check the mapped files with listFilesToCheck() method
 */
-require_once 'file2.php';
+require_once 'sample2.php';
 
 if (2 === 2) {
     echo "Something happened in " . $execution->execution(__LINE__)->percent() . "%<br>After execution the total of " . $execution->execution(__LINE__)->linesLoaded() . " lines<br>";

@@ -1,5 +1,11 @@
 <?php
-echo 'File 3 has been required<br>';
+//exemple file
+echo 'File 4 has been required<br>';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/sample3.php';
+
+
+
+
 
 
 

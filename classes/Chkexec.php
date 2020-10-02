@@ -69,7 +69,11 @@ class Chkexec
                     'lines' => $lines,
                     'lines_loaded' => 0
                 );
-                $this->updateTotalLines();
+
+                $this->lines_to_load = null;
+                foreach ($this->mapped_files as $key) {
+                    $this->lines_to_load += $key['lines'];
+                }
             }
         }
     }
@@ -88,14 +92,6 @@ class Chkexec
     function removeFileToCheck($key)
     {
         unset($this->mapped_files[$key]);
-    }
-
-    function updateTotalLines()
-    {
-        $this->lines_to_load = null;
-        foreach ($this->mapped_files as $key) {
-            $this->lines_to_load += $key['lines'];
-        }
     }
 
     function registerFinal($name, $current_line)
